@@ -1,0 +1,15 @@
+@import "./theme";
+
+* {
+  font-family: "Roboto", "Noto Sans";
+}
+
+body {
+  background-color: $background;
+  color: $on-background;
+}
+
+.main-content {
+  margin-left: $nav-width;
+  padding: 12px;
+}
