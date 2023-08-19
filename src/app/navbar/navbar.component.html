@@ -1,0 +1,40 @@
+<ul class="nav flex-column position-fixed min-vh-100">
+    <li class="nav-item">
+        <div class="bi-container" [class.active]="aboutMe.isActive">
+            <i class="bi bi-house" *ngIf="!aboutMe.isActive"></i>
+            <i class="bi bi-house-fill" *ngIf="aboutMe.isActive"></i>
+        </div>
+        <a class="nav-link" routerLink="/about-me" routerLinkActive="active" #aboutMe="routerLinkActive">
+            Home
+        </a>
+    </li>
+    <li class="nav-item">
+        <div class="bi-container" [class.active]="drawings.isActive">
+            <i class="bi bi-pencil" *ngIf="!drawings.isActive"></i>
+            <i class="bi bi-pencil-fill" *ngIf="drawings.isActive"></i>
+        </div>
+        <a class="nav-link" routerLink="/drawings" routerLinkActive="active" #drawings="routerLinkActive">
+            Drawings
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <div class="bi-container" [class.active]="animations.isActive">
+            <i class="bi bi-camera-reels" *ngIf="!animations.isActive"></i>
+            <i class="bi bi-camera-reels-fill" *ngIf="animations.isActive"></i>
+        </div>
+        <a class="nav-link" routerLink="/animations" routerLinkActive="active" #animations="routerLinkActive">
+            Animations
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <div class="bi-container"  [class.active]="photography.isActive">
+            <i class="bi bi-camera" *ngIf="!photography.isActive"></i>
+            <i class="bi bi-camera-fill" *ngIf="photography.isActive"></i>
+        </div>
+        <a class="nav-link" routerLink="/photography" routerLinkActive="active" #photography="routerLinkActive">
+            Photography
+        </a>
+    </li>
+</ul>
