@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NAVRAIL_ID} from "./navrail/navrail.component";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'streiblv.github.io';
+  navrailId = NAVRAIL_ID;
 }

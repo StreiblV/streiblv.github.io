@@ -1,22 +1,27 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { DrawingsComponent } from './drawings/drawings.component';
-import { AnimationsComponent } from './animations/animations.component';
+import { DrawingComponent } from './drawings/drawing.component';
+import { AnimationComponent } from './animations/animation.component';
 import { PhotographyComponent } from './photography/photography.component';
+import { NavrailComponent } from './navrail/navrail.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { MoreComponent } from './more/more.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     AboutMeComponent,
-    DrawingsComponent,
-    AnimationsComponent,
-    PhotographyComponent
+    DrawingComponent,
+    AnimationComponent,
+    PhotographyComponent,
+    NavrailComponent,
+    NavbarComponent,
+    HomeComponent,
+    MoreComponent
   ],
   imports: [
     BrowserModule,

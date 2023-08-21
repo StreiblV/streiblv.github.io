@@ -1,31 +1,41 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {AboutMeComponent} from "./about-me/about-me.component";
-import {DrawingsComponent} from "./drawings/drawings.component";
-import {AnimationsComponent} from "./animations/animations.component";
+import {DrawingComponent} from "./drawings/drawing.component";
+import {AnimationComponent} from "./animations/animation.component";
 import {PhotographyComponent} from "./photography/photography.component";
+import {HomeComponent} from "./home/home.component";
+import {MoreComponent} from "./more/more.component";
 
 const routes: Routes = [
   {
-    path: "about-me",
-    component: AboutMeComponent
+    path: "home",
+    component: HomeComponent
   },
   {
-    path: "drawings",
-    component: DrawingsComponent
+    path: "drawing",
+    component: DrawingComponent
   },
   {
-    path: "animations",
-    component: AnimationsComponent
+    path: "animation",
+    component: AnimationComponent
   },
   {
     path: "photography",
     component: PhotographyComponent
   },
   {
+    path: "more",
+    component: MoreComponent
+  },
+  {
+    path: "about-me",
+    component: AboutMeComponent
+  },
+  {
     path: "",
     pathMatch: "full",
-    redirectTo: "/about-me"
+    redirectTo: "/home"
   }
 ];
 

@@ -1,0 +1,19 @@
+app-navrail {
+  .list-group-item {
+    padding: 16px;
+    background-color: $body-bg-dark;
+    color: $dark-text-emphasis-dark;
+    border: none;
+
+    &:hover {
+      background-color: white;
+    }
+
+    &.active {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 16px;
+    }
+  }
+}
