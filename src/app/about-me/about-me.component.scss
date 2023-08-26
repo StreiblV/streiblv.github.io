@@ -1,0 +1,25 @@
+$background-color: #1e1e1e;
+
+.cv-button {
+  background-color: #1DDDBD; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-blue {
+  background-color: $background-color;
+  border: 2px solid #1DDDBD;
+}
+
+.button-blue:hover {
+  background-color: #1DDDBD;
+  color: white;
+}

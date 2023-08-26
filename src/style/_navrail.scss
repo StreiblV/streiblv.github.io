@@ -1,19 +1,30 @@
 app-navrail {
+
+  h1 {
+    margin-top: 3px;
+  }
+
   .list-group-item {
     padding: 16px;
     background-color: $body-bg-dark;
     color: $dark-text-emphasis-dark;
+    font-size: large;
     border: none;
 
     &:hover {
-      background-color: white;
+      background-color: #1DDDBD;
+      color: #212529;
     }
 
     &.active {
-      background-color: white;
-      color: black;
+      background-color: #1DDDBD;
+      color: #212529;
       border: none;
-      padding: 16px;
+      font-weight: bold;
+
+      border-right-style: solid;
+      border-right-color: #99ffee;
+      border-right-width: 4px;
     }
   }
 }

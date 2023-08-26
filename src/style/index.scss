@@ -1,1 +1,10 @@
 @import "./navrail";
+
+$background-color: #1e1e1e;
+
+body{
+  background-color: $background-color;
+
+  font-family: Arial, Verdana, sans-serif;
+  color: #dee2e6;
+}
