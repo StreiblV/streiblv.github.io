@@ -1,0 +1,17 @@
+.btn {
+  transition-duration: 0.2s;
+  border-radius: 0;
+}
+
+.btn-primary-outline {
+  background-color: $background;
+  color: $on-background;
+  border: 2px solid $primary;
+
+  &:hover {
+    border: 2px solid $primary;
+    background-color: $primary;
+    color: $on-primary;
+  }
+}
+
