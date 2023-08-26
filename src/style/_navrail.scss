@@ -1,5 +1,4 @@
 app-navrail {
-
   h1 {
     margin-top: 3px;
   }
@@ -17,10 +16,12 @@ app-navrail {
     }
 
     &.active {
+      margin: 0 !important;
+      font-size: large;
+      font-weight: bold;
+
       background-color: #1DDDBD;
       color: #212529;
-      border: none;
-      font-weight: bold;
 
       border-right-style: solid;
       border-right-color: #99ffee;
