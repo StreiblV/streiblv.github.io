@@ -1,5 +1,4 @@
 app-navrail {
-
   h1 {
     margin-top: 3px;
   }
@@ -12,18 +11,19 @@ app-navrail {
     border: none;
 
     &:hover {
-      background-color: #1DDDBD;
-      color: #212529;
+      background-color: $primary;
+      color: $on-primary;
     }
 
     &.active {
-      background-color: #1DDDBD;
-      color: #212529;
-      border: none;
+      margin: 0 !important;
       font-weight: bold;
 
+      background-color: $primary;
+      color: $on-primary;
+
       border-right-style: solid;
-      border-right-color: #99ffee;
+      border-right-color: $secondary;
       border-right-width: 4px;
     }
   }
