@@ -1,0 +1,19 @@
+.gallery {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  max-height: 100%;
+}
+
+.gallery-image {
+  position: relative;
+  z-index: 10;
+  max-width: 150%;
+}
+
+.preview {
+  z-index: 5;
+  opacity: 0.7;
+  max-height: 80%;
+}

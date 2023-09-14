@@ -4,13 +4,12 @@ import {AboutMeComponent} from "./about-me/about-me.component";
 import {DrawingComponent} from "./drawings/drawing.component";
 import {AnimationComponent} from "./animations/animation.component";
 import {PhotographyComponent} from "./photography/photography.component";
-import {HomeComponent} from "./home/home.component";
 import {MoreComponent} from "./more/more.component";
 
 const routes: Routes = [
   {
     path: "home",
-    component: HomeComponent
+    component: AboutMeComponent
   },
   {
     path: "drawing",
@@ -27,10 +26,6 @@ const routes: Routes = [
   {
     path: "more",
     component: MoreComponent
-  },
-  {
-    path: "about-me",
-    component: AboutMeComponent
   },
   {
     path: "",

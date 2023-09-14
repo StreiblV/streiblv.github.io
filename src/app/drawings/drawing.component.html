@@ -1,1 +1,15 @@
-<p>drawings works!</p>
+<div class="container">
+
+  <div class="row">
+<!--    *ngFor="let image of traditional()"-->
+    <div class="col-12" >
+      <app-gallery [images]="traditional()"></app-gallery>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-12">
+      <app-gallery [images]="digital()"></app-gallery>
+    </div>
+  </div>
+</div>

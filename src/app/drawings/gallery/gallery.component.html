@@ -1,0 +1,16 @@
+<div *ngIf="images.length > 0" class="gallery">
+  <div class="row">
+    <div class="col-4">
+      <img class="gallery-image preview" [src]="'assets/drawings/' + images[previousIndex]"
+        (click)="previous()">
+    </div>
+    <div class="col-4">
+      <img class="gallery-image" [src]="'assets/drawings/' + images[currentIndex]">
+    </div>
+    <div class="col-4">
+      <img class="gallery-image preview"
+           [src]="'assets/drawings/' + images[nextIndex]"
+           (click)="next()">
+    </div>
+  </div>
+</div>
