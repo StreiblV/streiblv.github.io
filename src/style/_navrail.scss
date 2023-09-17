@@ -3,12 +3,18 @@ app-navrail {
     margin-top: 3px;
   }
 
+  .navrail-content {
+    box-shadow: 0 .1rem 0.2rem rgba(white, .25);
+    margin-right: 32px;
+  }
+
   .list-group-item {
     padding: 16px;
-    background-color: $body-bg-dark;
+    background-color: $background-darker;
     color: $dark-text-emphasis-dark;
     font-size: large;
     border: none;
+    min-width: 220px;
 
     &:hover {
       background-color: $primary;

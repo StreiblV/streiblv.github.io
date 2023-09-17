@@ -1,0 +1,16 @@
+{
+  "digital": [
+    "d_pokemon.png",
+    "d_theRedCave.png",
+    "d_MissingEar.png"
+  ],
+  "traditional": [
+    "t_BeholderFlumph.jpg",
+    "t_Deathkiss2.png",
+    "t_DeathKiss.jpg",
+    "t_Necroface.jpg",
+    "t_Ramoth.jpg",
+    "t_Yochlol.png",
+    "t_ZombieBeholder.png"
+  ]
+}
