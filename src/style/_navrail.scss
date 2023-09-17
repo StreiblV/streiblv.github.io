@@ -1,7 +1,7 @@
 app-navrail {
-  h1 {
-    margin-top: 3px;
-  }
+  position: sticky;
+  left: 0;
+  top: 0;
 
   .navrail-content {
     box-shadow: 0 .1rem 0.2rem rgba(white, .25);
