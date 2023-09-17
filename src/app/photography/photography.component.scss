@@ -1,0 +1,12 @@
+$container-height: 90vh;
+
+$row-height: 90vh;
+
+.gallery-container {
+  height: $container-height;
+}
+
+.gallery-row{
+  max-height: $row-height;
+  height: $row-height;
+}

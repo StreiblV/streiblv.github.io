@@ -18,7 +18,7 @@
     <div class="carousel-item h-100 text-center"
          *ngFor="let image of images; let i = index"
          [class.active]="currentIndex == i">
-      <img [src]="'assets/drawings/' + image" class="h-100" alt="...">
+      <img [src]="getImagePath(image)" class="gallery-img" alt="...">
     </div>
   </div>
 
