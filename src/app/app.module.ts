@@ -13,6 +13,7 @@ import {NgModule} from "@angular/core";
 import {HttpClientModule} from "@angular/common/http";
 import {NgOptimizedImage} from "@angular/common";
 import { GalleryComponent } from './drawings/gallery/gallery.component';
+import { ModelsComponent } from './models/models.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GalleryComponent } from './drawings/gallery/gallery.component';
     NavrailComponent,
     NavbarComponent,
     MoreComponent,
-    GalleryComponent
+    GalleryComponent,
+    ModelsComponent
   ],
   imports: [
     BrowserModule,
