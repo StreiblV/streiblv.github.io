@@ -1,4 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, ViewChild} from '@angular/core';
+
+declare var bootstrap: any
 
 @Component({
   selector: 'app-gallery',
@@ -7,10 +9,21 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class GalleryComponent {
   private _images: string[] =[]
+  private _gallery: ElementRef | null = null
 
   previousIndex = -1
   currentIndex = -1
   nextIndex = -1
+
+  @ViewChild('gallery')
+  set gallery(value: ElementRef) {
+    this._gallery = value
+
+    if (value != null && value.nativeElement != null) {
+      const carousel = new bootstrap.Carousel(value.nativeElement)
+      carousel.cycle()
+    }
+  }
 
   get images(): string[] {
     return this._images;
