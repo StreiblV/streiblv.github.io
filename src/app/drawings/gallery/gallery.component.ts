@@ -11,6 +11,9 @@ export class GalleryComponent {
   private _images: string[] =[]
   private _gallery: ElementRef | null = null
 
+  @Input("subfolder")
+  subfolder: string = ""
+
   previousIndex = -1
   currentIndex = -1
   nextIndex = -1
@@ -43,23 +46,7 @@ export class GalleryComponent {
     }
   }
 
-  next() {
-    this.previousIndex = this.currentIndex;
-    this.currentIndex = this.nextIndex;
-    this.nextIndex = this.nextIndex + 1;
-
-    if (this.nextIndex >= this.images.length) {
-      this.nextIndex = 0;
-    }
-  }
-
-  previous() {
-    this.nextIndex = this.currentIndex;
-    this.currentIndex = this.previousIndex;
-    this.previousIndex = this.previousIndex - 1;
-
-    if (this.previousIndex < 0) {
-      this.previousIndex = this.images.length - 1;
-    }
+  getImagePath(image: string) {
+    return 'assets/' + this.subfolder + '/' + image
   }
 }
