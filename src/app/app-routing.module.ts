@@ -5,6 +5,7 @@ import {DrawingComponent} from "./drawings/drawing.component";
 import {AnimationComponent} from "./animations/animation.component";
 import {PhotographyComponent} from "./photography/photography.component";
 import {MoreComponent} from "./more/more.component";
+import {ModelsComponent} from "./models/models.component";
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: "animation",
     component: AnimationComponent
+  },
+  {
+    path: "models",
+    component: ModelsComponent
   },
   {
     path: "photography",
