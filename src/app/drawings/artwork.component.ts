@@ -5,10 +5,10 @@ import {Drawings} from "./service/drawings";
 
 @Component({
   selector: 'app-drawing',
-  templateUrl: './drawing.component.html',
-  styleUrls: ['./drawing.component.scss']
+  templateUrl: './artwork.component.html',
+  styleUrls: ['./artwork.component.scss']
 })
-export class DrawingComponent implements OnInit {
+export class ArtworkComponent implements OnInit {
   private drawings: Drawings = new Drawings();
 
   constructor(
