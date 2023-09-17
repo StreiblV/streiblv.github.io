@@ -2,10 +2,7 @@
   <div class="container-fluid">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <button class="btn"
-                type="button"
-                data-bs-toggle="collapse"
-                [attr.data-bs-target]="'#' + navrailId">
+        <button class="btn" (click)="toggleNavrail()">
           <span class="navbar-toggler-icon"></span>
         </button>
       </li>

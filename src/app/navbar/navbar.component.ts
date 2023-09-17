@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {NAVRAIL_ID} from "../navrail/navrail.component";
+import {Component, Input} from '@angular/core';
+import {NAVRAIL_ID, NavrailComponent} from "../navrail/navrail.component";
 
 @Component({
   selector: 'app-navbar',
@@ -8,4 +8,13 @@ import {NAVRAIL_ID} from "../navrail/navrail.component";
 })
 export class NavbarComponent {
   navrailId = NAVRAIL_ID;
+
+  @Input("navrail")
+  navrail: NavrailComponent | null = null
+
+  toggleNavrail() {
+    if (this.navrail) {
+      this.navrail.showing = !this.navrail.showing
+    }
+  }
 }

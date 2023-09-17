@@ -14,6 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {NgOptimizedImage} from "@angular/common";
 import { GalleryComponent } from './drawings/gallery/gallery.component';
 import { ModelsComponent } from './models/models.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ModelsComponent } from './models/models.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     NgOptimizedImage
