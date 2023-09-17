@@ -1,1 +1,28 @@
-<p>drawings works!</p>
+<div class="container gallery-container">
+
+  <div class="row mt-4">
+    <div class="col-12">
+      <h1>Traditional Drawings</h1>
+    </div>
+  </div>
+
+  <div class="row mt-4 gallery-row">
+    <div class="col-12 gallery-row">
+      <!--    *ngFor="let image of traditional()"-->
+      <app-gallery [images]="traditional()"></app-gallery>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12">
+      <h1>Digital Drawings</h1>
+    </div>
+  </div>
+
+  <div class="row mt-4 gallery-row">
+    <div class="col-12 gallery-row">
+      <!--    *ngFor="let image of traditional()"-->
+      <app-gallery [images]="digital()"></app-gallery>
+    </div>
+  </div>
+</div>

@@ -8,28 +8,32 @@ import {AnimationComponent} from './animations/animation.component';
 import {PhotographyComponent} from './photography/photography.component';
 import {NavrailComponent} from './navrail/navrail.component';
 import {NavbarComponent} from './navbar/navbar.component';
-import {HomeComponent} from './home/home.component';
 import {MoreComponent} from './more/more.component';
 import {NgModule} from "@angular/core";
+import {HttpClientModule} from "@angular/common/http";
+import {NgOptimizedImage} from "@angular/common";
+import { GalleryComponent } from './drawings/gallery/gallery.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        AboutMeComponent,
-        DrawingComponent,
-        AnimationComponent,
-        PhotographyComponent,
-        NavrailComponent,
-        NavbarComponent,
-        HomeComponent,
-        MoreComponent
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    AboutMeComponent,
+    DrawingComponent,
+    AnimationComponent,
+    PhotographyComponent,
+    NavrailComponent,
+    NavbarComponent,
+    MoreComponent,
+    GalleryComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    NgOptimizedImage
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
