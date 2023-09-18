@@ -1,6 +1,7 @@
 app-navrail {
-  position: fixed;
-  z-index: 10000;
+  .navrail {
+    position: fixed;
+  }
 
   .navrail-content {
     box-shadow: 0 .1rem 0.2rem rgba(white, .25);
@@ -13,7 +14,6 @@ app-navrail {
     color: $dark-text-emphasis-dark;
     font-size: large;
     border: none;
-    min-width: 220px;
 
     &:hover {
       background-color: $primary;

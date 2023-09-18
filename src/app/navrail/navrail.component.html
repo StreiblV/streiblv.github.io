@@ -1,43 +1,48 @@
-<div class="navrail"
-     @flyIn
-     *ngIf="showing"
-     [id]="id">
-  <div
-    class="min-vh-100 bg-dark text-bg-dark float-start pt-2 navrail-content">
-    <div>
-      <ul class="list-group list-group-flush list-group mt-5">
-        <li class="list-group-item list-group-item-action"
-          routerLink="home"
-          routerLinkActive="active">
-          Home
-        </li>
-        <li class="list-group-item list-group-item-action"
-          routerLink="artwork"
-          routerLinkActive="active">
-          Artwork
-        </li>
-        <li class="list-group-item list-group-item-action"
-          routerLink="animation"
-          routerLinkActive="active">
-          Animation
-        </li>
-        <li class="list-group-item list-group-item-action"
-          routerLink="models"
-          routerLinkActive="active">
-          3D Models
-        </li>
-        <li class="list-group-item list-group-item-action"
-            routerLink="photography"
-            routerLinkActive="active">
-          Photography
-        </li>
-        <li class="list-group-item list-group-item-action"
-            routerLink="more"
-            routerLinkActive="active">
-          Additional Creations
-        </li>
-      </ul>
+<div class="row">
+  <div class="col-2"
+       *ngIf="showing"
+       @flyIn>
+    <div class="navrail">
+      <div class="min-vh-100 bg-dark text-bg-dark pt-2 navrail-content">
+        <div>
+          <ul class="list-group list-group-flush list-group mt-5">
+            <li class="list-group-item list-group-item-action"
+                routerLink="home"
+                routerLinkActive="active">
+              Home
+            </li>
+            <li class="list-group-item list-group-item-action"
+                routerLink="artwork"
+                routerLinkActive="active">
+              Artwork
+            </li>
+            <li class="list-group-item list-group-item-action"
+                routerLink="animation"
+                routerLinkActive="active">
+              Animation
+            </li>
+            <li class="list-group-item list-group-item-action"
+                routerLink="models"
+                routerLinkActive="active">
+              3D Models
+            </li>
+            <li class="list-group-item list-group-item-action"
+                routerLink="photography"
+                routerLinkActive="active">
+              Photography
+            </li>
+            <li class="list-group-item list-group-item-action"
+                routerLink="more"
+                routerLinkActive="active">
+              Additional Creations
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
+  <div [class.col-10]="showing" [class.col-12]="!showing">
+    <ng-content></ng-content>
+  </div>
 </div>

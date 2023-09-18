@@ -7,8 +7,6 @@ import {NAVRAIL_ID, NavrailComponent} from "../navrail/navrail.component";
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  navrailId = NAVRAIL_ID;
-
   @Input("navrail")
   navrail: NavrailComponent | null = null
 

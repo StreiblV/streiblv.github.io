@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
 
 export const NAVRAIL_ID = "navrail";
@@ -31,6 +31,5 @@ export const NAVRAIL_ID = "navrail";
   ]
 })
 export class NavrailComponent {
-  id = NAVRAIL_ID
   showing = true
 }
