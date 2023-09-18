@@ -1,7 +1,6 @@
 app-navrail {
-  position: sticky;
-  left: 0;
-  top: 0;
+  position: fixed;
+  z-index: 10000;
 
   .navrail-content {
     box-shadow: 0 .1rem 0.2rem rgba(white, .25);
