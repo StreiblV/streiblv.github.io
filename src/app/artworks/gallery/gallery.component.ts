@@ -26,6 +26,7 @@ export class GalleryComponent {
     if (value != null && value.nativeElement != null) {
       const carousel = new bootstrap.Carousel(value.nativeElement)
       carousel.cycle()
+
       value.nativeElement.addEventListener("slid.bs.carousel", (event: any) => {
         this.currentIndex = event.to
       })
