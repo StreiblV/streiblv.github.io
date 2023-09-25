@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {NAVRAIL_ID, NavrailComponent} from "../navrail/navrail.component";
+import {NavrailComponent} from "../navrail/navrail.component";
 
 @Component({
   selector: 'app-navbar',

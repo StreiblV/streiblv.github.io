@@ -1,7 +1,5 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
-
-export const NAVRAIL_ID = "navrail";
 
 @Component({
   selector: 'app-navrail',
@@ -30,6 +28,10 @@ export const NAVRAIL_ID = "navrail";
     ])
   ]
 })
-export class NavrailComponent {
+export class NavrailComponent implements OnInit {
   showing = true
+
+  ngOnInit(): void {
+    this.showing = window.innerWidth > 500;
+  }
 }
