@@ -1,12 +1,31 @@
-$container-height: 90vh;
+$row-height-sm: 70vh;
+$row-height-md: 75vh;
+$row-height: 80vh;
 
-$row-height: 90vh;
-
-.gallery-container {
-  height: $container-height;
+@media screen and (max-height: 640px){
+  .gallery-row{}
 }
 
-.gallery-row{
-  max-height: $row-height;
-  height: $row-height;
+@media screen and (min-height: 640px) and (max-height: 820px){
+  .gallery-row{
+    min-height: $row-height-sm;
+    max-height: $row-height-sm;
+    height: $row-height-sm;
+  }
+}
+
+@media screen and (min-height: 820px) and (max-height: 1090px){
+  .gallery-row{
+    min-height: $row-height-md;
+    max-height: $row-height-md;
+    height: $row-height-md;
+  }
+}
+
+@media screen and (min-height: 1090px) {
+  .gallery-row{
+    min-height: $row-height;
+    max-height: $row-height;
+    height: $row-height;
+  }
 }
