@@ -11,7 +11,7 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {MoreComponent} from './more/more.component';
 import {NgModule} from "@angular/core";
 import {HttpClientModule} from "@angular/common/http";
-import {NgOptimizedImage} from "@angular/common";
+import {HashLocationStrategy, Location, LocationStrategy, NgOptimizedImage} from "@angular/common";
 import { GalleryComponent } from './artworks/gallery/gallery.component';
 import { ModelsComponent } from './models/models.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -36,8 +36,15 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     AppRoutingModule,
     NgOptimizedImage
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    Location,
+    {
+      provide: LocationStrategy, useClass: HashLocationStrategy
+    }
+  ],
+  bootstrap: [
+    AppComponent,
+  ]
 })
 export class AppModule {
 }
