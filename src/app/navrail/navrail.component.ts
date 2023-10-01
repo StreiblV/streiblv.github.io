@@ -1,5 +1,7 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
+
+const SMALL_SCREEN_LIMIT = 500;
 
 @Component({
   selector: 'app-navrail',
@@ -32,6 +34,12 @@ export class NavrailComponent implements OnInit {
   showing = true
 
   ngOnInit(): void {
-    this.showing = window.innerWidth > 500;
+    this.showing = window.innerWidth > SMALL_SCREEN_LIMIT;
+  }
+
+  closeOnMobile() {
+    if (window.innerWidth <= SMALL_SCREEN_LIMIT) {
+      this.showing = false;
+    }
   }
 }
